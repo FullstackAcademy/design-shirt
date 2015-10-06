@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    .shirt {
+      background: #555;
+    }
+    .shirt svg {
+      width: 100%;
+      height: 100%;
+      -webkit-mask: url(fsa-logo.svg) no-repeat 50%;
+      -webkit-mask-size: 50%;
+    }
+    .shirt circle {
+      mix-blend-mode: screen;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="shirt">
+      <svg viewbox="0 0 80 80">
+        <circle fill="red" cx="40" cy="30" r="16" />
+        <circle fill="blue" cx="30" cy="47" r="16" />
+        <circle fill="lime" cx="50" cy="47" r="16" />
+      </svg>
+    </div>
+  </body>
+</html>
